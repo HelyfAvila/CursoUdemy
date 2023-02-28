@@ -1,0 +1,19 @@
+   Link dentro do código html:  <a href="contato.html (nome do arquivo ou site completo, incluindo o htpps://) "> Contato</a> <!--Hiperlink, referência para outro 
+links-->
+
+Passo a passo criação de tabelas: 
+   1-Para criação de tabelas no html a 1° Tag utilizadas é a Table, podemos colocar atributos como o border, que é a borda em pixels. 
+é declarada dentro da própria tag. Exemplo: <table border="2"></table>
+   2- Inserir a tag <tr></tr> traduzida como table row, ou seja,  linha da tabela
+   3- dentro dessa tag <tr></tr> deveremos colocar os dados pela tag <td></td> ou traduzindo table date. 
+
+   Para adicionarmos então mais linhdas e célular devemos adicionar mais <tr></tr> ou seja linhas e dentro dessas o <td></td> ou deseja os dados.
+
+
+Para ter diferenciação na escrita do título na montagem de uma tabela, utilizamos a tag <th></th> traduzida table header, ou cabeçalho da tabela
+
+
+
+Adicionando atributos a tabela, dentro da tag <table></table>, incluindo ao lado de border o width para definirmos a largura da tabela. (nesse caso a unidade
+de medida é o pixels, não é necessário colocar o px). Essa largura pode ser colocar em % também, para dizer quantos % do espaço total do navegador será
+ocupado.

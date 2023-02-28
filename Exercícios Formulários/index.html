@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h2>Login:</h2> <!--Formulário de login do usuário-->
+    <form> <!--Componente obrigatório para iniciar formulário-->
+     Login:<br>
+     <input type="text"  name="login"> <br><!-- 1 componente para digitar dados, no caso o login-->
+      Senha:<br> <!--observe que ele pede o -->
+     <input type="password" name="senha"><br> <!--2 componte para digitar dados, no caso a senha-->
+     <!--tag input é para entrada de dados, o type, ou seja, o tipo é essencial -->
+    <br><input type="button" value="Logar">  <!--define o botão, com value ou seja valor/nome sendo Logar-->
+    <!--o <br> é utilizado para pular linhas, dar espaçamentos--> <!--deve ser definido o tipo como submite que no inglês significa enviar, que nesse
+    caso envia para o url.-->
+    </form>
+
+    <h2>Cadastre-se </h2>
+    Login: <br>
+    <input type="text" name="login"><br><br>   
+    Sexo: <br>
+    <input type="radio" name="sexo" value="mas"> 
+    Masculino <br> <!--na definição de name deve ser colocado o mesmo nome-->
+    <input type="radio" name="sexo" value="fem">
+     Feminino <br><br> <!--para que a seleção sempre seja feita em apenas 
+    uma das opções-->
+    Interesses <br>
+    <input type="checkbox" name="interesses">Futebol<br>  <!--cria caixas onde podem ser selecionados vários exemplos-->
+    <input type="checkbox" name="interesses">Cursos<br>
+    <input type="checkbox" name="interesses">Moda<br>
+
+    <br>Estado<br>
+    <select name="estado">
+        <option value="sp">SP</option> <!--atribuição de value para poder trabalhar com dados-->
+        <option value="mg">MG</option>
+        <option value="rj">RJ</option>
+        <option value="rs">RS</option>
+
+    </select> <!--indicado para selecionar uma lista de informações
+    que seja muito grande, cria uma caixinha onde pode ser selecionado algo de uma lista-->
+
+    
+    Observações: <br>
+    <textarea></textarea><!--cria uma caixa de texto com mais espaço-->
+
+
+
+
+
+    
+    
+</body>
+</html>
