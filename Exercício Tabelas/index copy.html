@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2><strong>Produtos: </strong></h2> <!--Título-->
-    <table border="2" width="100%"> <!--Ocupando 100% do espaço total-->
-        <tr>
-            <th>Código</th> <!--th transforma o título em um cabeçalho da tabela, deixa em negrito, centraliza, etc-->
-            <th>Produto</th> <!--dessa forma a baixo você coloca as células da tabela, ou seja, lado a lado-->
-            <th>Preço</th>
-        </tr> <!--table row, linha da tabela -->
-        
-        <tr> <!--Cria linhas !-->
-            <td>001</td> <!--Cria células dentro dessas linhas!-->
-            <td>Notebook</td> <!--dessa forma a baixo você coloca as células da tabela, ou seja, lado a lado-->
-            <td>R$2.500,00</td>
-        </tr>
-        <tr> <!--Cria linhas !-->
-            <td>002</td> <!--Cria células dentro dessas linhas!-->
-            <td>
-                <img src="https://resource.logitech.com/w_800,c_lpad,ar_1:1,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mobility/universal-folio-tablet-keyboard/gallery/uk-universal-folio-gallery1.png?v=1"
-                 widht="100" height="400"  > <!--Largura da imagem inserida-->
-            </td> <!--dessa forma a baixo você coloca as células da tabela, ou seja, lado a lado-->
-            <td>R$999,00</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Desconto</td>
-            <td colspan="2">cupom1 -R$10</td> <!--col vem de coluna span de extesão, o atributo colspan, serve para juntar duas colunas em uma só (extensão da coluna), deve ser inserido o número de colunas que deve ocupar-->
-            <!-- <td></td>  Deixa a tabela feita mas vazia --> 
-        </tr>
-        <tr>
-            <td colspan="2">cupom2 -R$12</td> <!--col vem de coluna span de extesão, o atributo colspan, serve para juntar duas colunas em uma só (extensão da coluna), deve ser inserido o número de colunas que deve ocupar-->
-            <!-- <td></td>  Deixa a tabela feita mas vazia --> 
-            <!--rowspan, trás a juntação das linhas -->
-        </tr>
-        <tr>
-            <td>Total:</td>
-            <td colspan="2">R$3.478,98</td>
-        </tr>
-    </table>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2><strong>Produtos: </strong></h2> <!--Título-->
+        <table border="2" width="100%"> <!--Ocupando 100% do espaço total-->
+            <tr>
+                <th>Código</th> <!--th transforma o título em um cabeçalho da tabela, deixa em negrito, centraliza, etc-->
+                <th>Produto</th> <!--dessa forma a baixo você coloca as células da tabela, ou seja, lado a lado-->
+                <th>Preço</th>
+            </tr> <!--table row, linha da tabela -->
+            
+            <tr> <!--Cria linhas !-->
+                <td>001</td> <!--Cria células dentro dessas linhas!-->
+                <td>Notebook</td> <!--dessa forma a baixo você coloca as células da tabela, ou seja, lado a lado-->
+                <td>R$2.500,00</td>
+            </tr>
+            <tr> <!--Cria linhas !-->
+                <td>002</td> <!--Cria células dentro dessas linhas!-->
+                <td>
+                    <img src="https://resource.logitech.com/w_800,c_lpad,ar_1:1,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mobility/universal-folio-tablet-keyboard/gallery/uk-universal-folio-gallery1.png?v=1"
+                    widht="100" height="400"  > <!--Largura da imagem inserida-->
+                </td> <!--dessa forma a baixo você coloca as células da tabela, ou seja, lado a lado-->
+                <td>R$999,00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Desconto</td>
+                <td colspan="2">cupom1 -R$10</td> <!--col vem de coluna span de extesão, o atributo colspan, serve para juntar duas colunas em uma só (extensão da coluna), deve ser inserido o número de colunas que deve ocupar-->
+                <!-- <td></td>  Deixa a tabela feita mas vazia --> 
+            </tr>
+            <tr>
+                <td colspan="2">cupom2 -R$12</td> <!--col vem de coluna span de extesão, o atributo colspan, serve para juntar duas colunas em uma só (extensão da coluna), deve ser inserido o número de colunas que deve ocupar-->
+                <!-- <td></td>  Deixa a tabela feita mas vazia --> 
+                <!--rowspan, trás a juntação das linhas -->
+            </tr>
+            <tr>
+                <td>Total:</td>
+                <td colspan="2">R$3.478,98</td>
+            </tr>
+        </table>
+    </body>
 </html>
