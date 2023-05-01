@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cor e imagem de fundo</title>
+        <style type="text/css"> /*Como utilizar cores/ imagens de fundo*/
+         
+          /*  
+              .fundo{
+                background-color: blue ; - Fundo do elemento ao qual classe foi definida. Utilizado para cor.
+                color: white;
+              }
+          */      
+            h1{
+              /*  background-image: url('Imagens/yoshi2.jfif');*/ /*Para definir imagem para plano de fundo. Quando a imagem não tiver o tamanho necessário para ocupar todo o espaço ela será repetida várias vezes.  */
+                background-repeat: repeat-x ; /*Propriedade para controlar repetição de imagem. Como você seja feita a repetição. Exemplo: no-repeat (para não ser repetido) 
+                repeat- Repete tanto na horizontal quanto na vertifical 
+                no-repeat- Imagem de fundo aparece somente 1 vez
+                repeat- x - repetição na horizontal
+                repeat- y- repetição na vertical */
+                background-attachment: scroll ; /*Imagem fixa como plano de fundo. Independente se ocorre rolagem em barra. */
+                /*Scroll- acompanha o conteúdo. Não é fixo*/
+                background-position: center center; /*Posição para imagem dentro do body. Recebe tanto um valor, quanto dois. Primeiro ele define na horizontal e depois vertical (de cima para baixo). Top é o topo. Bottom é lá em baixo */
+                /*
+               Primeiro valor: left (esquerda), center (centro), right (direita). Segundo valor: top (topo), center (centro), bottom (parte inferior )
+                */
+            }
+            .fundo{
+                background: blue url(Imagens/yoshi2-removebg-preview.png) repeat-x scroll  top; /*Aplica cor de fundo e imagem ao mesmo tempo. Imagem png e transparente. Sem repetição e acompanhando a rolagem da tela. Alinhamento em horizontal e vertical */
+            }
+         
+        </style>
+    </head>
+    <body class="fundo">
+        <h1>
+            Conteúdo de Título I<br>
+        </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perferendis reprehenderit facere illo nostrum ullam delectus vero accusantium quasi corrupti consectetur optio deserunt molestias dolorem voluptas quos, quibusdam ad culpa.</p>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsa aliquid doloribus numquam quia? Deleniti delectus minima nihil provident eos esse adipisci laboriosam modi. Optio ut maxime explicabo qui iusto.</p>
+    </body>
+</html>

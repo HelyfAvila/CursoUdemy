@@ -1,0 +1,36 @@
+.conteudo{
+    background: blue;
+    border: 1px solid grey;
+    width: 150px; /*Largura*/
+    height: 150px; /*Altura*/
+    float: left; /*Os elementos são colocados a esquerda porém como são mais de um elemento os mesmos vão ficar lado a lado. */
+    margin: 10px;
+}/*Float serve para colocar um elemento ao lado do outro*/
+/*.conteudo1{
+    background: red;
+    border: 1px solid grey;
+    width: 150px; /*Largura
+    height: 150px; /*Altura
+    float: right; /*São as opções disponíveis :left, rigth, none. Cria um fluxo diferenciado que faz com que os conteúdos flutuem a esqueda ou a direita. Ele sai do fluxo padrão dos conteúdos. Os elementos flutuantes podem ficar sobre os outros. Ele sai do fluxo padrão e vai para o fluxo flutuante. 
+}*/
+/*.conteudo1{
+    background: red;
+    border: 1px solid grey;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    float: left; 
+    /*Quando temos um elemento um pouco maior a flutuação não vai ficar abaixo. É necessário ter espaço 
+}*/
+.clear{ /*Limpar fluxo de elementos flutuantes que foi utilizado acima. */
+    clear: both ; /*As opções disponíveis: left, rigth, both, none. É sempre colocado geralmente o lado que está o fluxo flutuante, se utilizarmos o buth independente do lado que o mesmo estiver ele vai retirar e o elemento vai para baixo.  */
+}
+#principal{
+    border: 5px solid red;
+    background: green;
+    
+    
+    
+    
+    /*OBS: QUANDO UTILIZAMOS ELEMENTOS FLUTUANTES EM ELEMENTOS ESPECIFICOS DENTRO DE OUTRA DIV ELE MEIO QUE VAI SOBREPOR AS OUTRAS DETERMINAÇÕES COMO POR EXEMPLO UM BACKGROUND, ELE NÃO VAI FAZER A OUTRA CAIXA QUE DEVERIA SER FEITA QUANDO UTILIZAMOS A BORDA E ETC, NESSE CASO, CRIAMOS UM OUTRO ELEMENTO PARA MEIO QUE LIMPAR ESSA ESPECIIFCAÇÃO, UM ELEMENTO QUE PODE ATÉ SER VAZIO COMO A DIV COM A ESPECIFICAÇÃO DE CLEAR, LINHA 25 NO CÓDIGO HTML*/
+}

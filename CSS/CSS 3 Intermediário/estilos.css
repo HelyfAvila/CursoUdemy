@@ -1,0 +1,45 @@
+/*
+Modelo de caixa
+*/
+/*
+.conteudo{
+    border: 1px solid red;  -Borda
+    padding-top: 20px;  - Espaçamento superior interno
+    padding-right: 20px; -Quando utilizamos um padding ele passa a fazer parte do tamanho final da nossa caixa. OU seja, expandindo a mesma. Contabilizado com o tamanho total da caixa.
+    padding-bottom: 20px; -Espaçamento inferior
+    padding-left: 20px; -Espaçamento da parte esquerda
+
+    Ou seja, com esses atributos acima de padding chegamos a conclusão que ele centralizou os dados. Outra forma de fazer está abaixo: 
+    padding: 20px 20px 20px 20px; Nesse caso colocamos tudo de uma única vez e ele é contabilizado começando com o valor top, depois rigth, bottom e por fim left.
+
+    Ainda se colocarmos apenas padding: 20px; será colocado 20px de cada lado em cima e em baixo
+    Ou então padding: 20px 5px ; nesse caso seria determinado que 20px vai para o top e bottom e 5 px para o left e rigth  
+
+
+    /*Ainda temos o espaçamento externo, ou seja, margin*/
+
+    /*Essa é uma forma de fazer separadamente */
+    /*margin-top:20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;*/
+    /*Podemos fazer junto. Quando utilizados o top e bottom entre dois elementos, geralmente os dois se sobrepõe e é utilizado o maior valor.  Dessa forma: top, 
+    margin: 10px;
+    width: 150px; -Largura
+}   */
+/*
+.conteudo2{
+    margin: 5px;
+    width: 150px;
+    border: 1px solid red; -A espessura, o tipo, a cor
+    /*Quando temos dois elementos com margens diferentes e próximos por exemplo, um abaixo do outro, a margem que será aplicada é a maior 
+}*/
+#noticia{
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid gray;
+    
+}
+h2{
+    margin: 0px;
+}

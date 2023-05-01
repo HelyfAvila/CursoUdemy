@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estilos de textos</title>
+        <style type="text/css"> /*Nesse aula vamos ver como aplicar estilos de textos*/
+        body{
+            font-size: 40px; /*Tamanho da fonte*/
+            font-family: 'Times New Roman', Times, serif; /*Tipo de fonte e outros tipos para substituir caso a principal não esteja disponível. Lembrete: Fontes com mais de um nome colocar entre aspas ' ' */
+        }
+        .negrito{
+            font-weight: bold ; /*Peso da fonte. O tipo de fonte normalmente, o bold seria o texto em negrito. O normal seria um texto padrão. Podemos definir de 100 até 900 (que é o máximo, para um texto negrito) */
+        }
+        .italico{
+            font-style: italic; /*Para textos itálicos */
+        }
+        .formatacao{
+            text-decoration: underline; /* Nos permite aplicar algumas formatações no texto. Linha inferior ao texto */
+        }
+        .formatacao2{
+            text-decoration: overline; /*Linha superior ao texto */
+        }
+        .formatacao3{
+            text-decoration: line-through; /*Linha no meio do texto, sobre o texto*/
+        }
+        .texto{
+            font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif   ; /*Todas as formatações acima em uma única linha. Define o estilo da fonte como negrito, o tamanho da fonte e o tipo de fonte*/
+        }
+
+        </style>
+    </head>
+    <body>
+        <p class="negrito">Texto negrito</p>
+        <p class="italico">Texto itálico</p>
+        <p class="formatacao">Formatação de texto</p>
+        <p class="formatacao2" >Texto</p>
+        <p class="formatacao3">Texto</p>
+        <p class="texto">Texto</p>
+    </body>
+</html>

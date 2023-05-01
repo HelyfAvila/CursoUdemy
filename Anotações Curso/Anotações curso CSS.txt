@@ -1,0 +1,133 @@
+Folha de estilo:
+
+CSS é um divisor de águas na hora de criar sites.  Para criar sites mais profissionais. Serve para formatar sites. 
+Serve para customizar elementos html. 
+
+Existem 3 manerias de utilizar o css: de trabalhar com as folhas de estilo
+
+Inline Style: trabalha o estilo direto no próprio elemento. Na própria linha ou dentro do elemento html. Forma mais trabalhosa já que devemos fazer um por vez;
+
+
+Internal Style: Coloca o estilo direto dentro do seu código. Folha de estilo interna. 
+
+<style type= "text/css"> </style>  
+
+External Style: Em arquivo externo.
+
+
+Seletor   Chaves
+     \  /
+     P { 
+	color:         red;   <-- Declaração
+     }    |	        |
+	Propriedade    Valor
+
+O ponto e vírgula que define o encerramento da formatação de tag. Terminou de escrever propriedade.
+
+Como utilizar classes e ids:
+
+O que é uma classe? Pode ser utilizado várias vezes. Vem da palavra classificação. 
+
+
+O que é um id? Identificador.Só existe um único dessa forma. Um ponto único. 
+
+
+Qual utilizamos a tag especifica, exemplo, p de parágrafo aplicamos uma formatação geral. Classes aplicaremos uma formatação especifica somente nos itens com a mesma. 
+
+A classe pode ser utilizada mais vezes dentro do site. 
+
+
+
+para chamar um id no csss utilizamos #nomedoid.
+
+
+
+Divs e Span::: Para organizar melhor o site. 
+
+Div é para dividir e estruturar o site. 
+
+Div: elemento do tipo block. Que ocupa toda o tamanho da tela. 
+
+Span: Elemento do tipo inline. Quer dizer que agrupa seus elementos linha em linha. Coloca seus elementos uma linha em frente a outra. Diferente da div. Span é para realizar formatações especificas em textos. 
+
+Parágrafo também é um elemento de bloco. 
+
+Como chamar um id # como chamar uma classe .
+
+Fontes & Cores: 
+Dica para definição do tipo de fonte, utilize entre 2 a 3 tipos de fontes antes de definir uma genérica. Exemplo: font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+
+
+Tamanhos de textos- Algumas unidades de medida:
+px (pixels) -> Tamanho Fixo
+% (porcentagem) -> Tamanho Relativo ao total do elemento, ou tela. 100% do tamanho padrão que navegador utiliza como referência
+em -> Tamanho relativo ao container pai
+
+
+Estilos de textos: 
+
+Tipo de texto: Fonte
+Estilo: Negrito, itálico e normal. Conforme código. 
+
+
+Cor e imagem de fundo: 
+
+
+
+
+------------------------------------------------------------------------------------
+CONHECIMENTOS INTERMEDIÁRIOS CSS: 
+BOX MODEL OR MODELO DE CAIXA: INCLUI BORDER(BORDA. ALGO EXTERNO QUE FICA EM VOLTA), PADDING (ESPAÇAMENTO INTERNO) E MARGIN( MARGEM. ESPAÇAMENTO EXTERNO ENTRE OS ELEMENTOS). TODOS OS ELEMENTOS HTML QUANDO EDITADOS SE COMPORTAM COMO UMA CAIXA E POR SER UMA CAIXA PODEMOS APLICAR: Border, padding e margin (margem)
+
+
+
+-------------------------------------------------------------------------------------
+Elementos Flutuantes
+
+Utilizamos a partir do float: São as opções disponíveis :left, rigth, none. Cria um fluxo diferenciado que faz com que os conteúdos flutuem a esqueda ou a direita. Ele sai do fluxo padrão dos conteúdos. Os elementos flutuantes podem ficar sobre os outros. Ele sai do fluxo padrão e vai para o fluxo flutuante. 
+Float serve para colocar um elemento ao lado do outro
+
+
+Utilizamos o clear juntamente, para limpar o fluxo de elemento flutuantes para adicionar elementos diferentes, onde não queremos utilizar o fluxo. 
+
+
+-------------------------------------------------------------------------------------------------
+Elementos bloco: 
+
+-Inline: Ele tem comportamento diferente, ele fica um elemento a frente do outro e largura da caixa é de acordo com o conteúdo. 
+Exemplos: <a> (link), <span>, <img> 
+
+-Block : eles tem uma largura que ocupa todo o espaçamento da tela. Outro comportamento é que ele fica um abaixo do outro. 
+Exemplos: <h1>, <p>, <table>
+
+
+-Inline- Block - Tipo híbrido: Ele tem a largura definida em relação ao tamanho do conteúdo mas os elementos ficam um abaixo do outro. 
+
+Ex: display: inline-block.
+Nesse elemento também podemos definir como display: block
+ou display : inline. 
+
+
+Essa divisão faz com que eles tenham comportamentos diferentes. 
+
+No inline-block os elementos ficam ao lado do outro enquanto caibam na mesma linha, caso contrário, ele passa o elemento para baixo. 
+
+
+----------------------------------------------------------------------------------------
+
+Posicionamento estático (que é do jeito padrão, deacordo com o tipo de elemento) e relativo:
+
+
+position: static; /*É a padrão, de acordo com o tipo de elemento, incluindo block e inline*/
+position: relative; /*Quando utilizamos a posição relativa precisamos aplicar propriedades de deslocamneto. As propriedades tem 4 valores: top, rigth, left e bottom */
+A posição é alterada de acordo com a posição que o mesmo deveria ter caso não aplicasse essas formatações.
+
+
+
+Posicionamento absoluto e fixo: 
+/*O elemento de uma posição absoluta sai do fluxo normal, mas não afeta a posição dos outros elementos. Eles se comportam como se o elemento que foi aplicado a classe não estivesse ali. Ele aparece sobre. Então podemos aplicar propriedades de deslocamento. Dentre eles o top, rigth, left e bottom */
+
+
+
+

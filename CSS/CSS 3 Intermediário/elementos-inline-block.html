@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Inline, block e inline-block</title>
+    <style type="text/css">
+        .borda{
+            border: 1px solid red;
+            display: inline; /*Como estamos mexendo diretamente na estrutura de um h1 que é um elemento block, ou seja, que fica em baixo um do outro e o tamanho ocupa a tela toda. Essa alteração faz com que o mesmo se torne um elemento inline, ou seja, que fica ao lado um do outro e ocupa o tamanho do conteúdo*/
+            /*padding: 10px; /*Vai aumentar o espaçamento interno */
+        }
+        .borda2{
+            border: 1px solid red;
+            display: inline;
+            
+        }
+        .borda3{
+            border: 1px solid red;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elementos Inline, block e inline-block</h1>
+    </header>
+    <section>
+        <h1 class="borda">
+            Bloco 1
+        </h1>
+        <h1 class="borda">
+            Bloco 2
+        </h1>
+        <div class="borda2"> <!--A div é um elemento block, ou seja, que ocupa todo o espaço da tela e fica abaixo um do outro.-->
+            Bloco 1
+        </div>
+        <div class="borda2">
+            Bloco 2
+        </div>
+        <span class="borda3"> <!--Span é um elemento do tipo inline, ou seja, ele fica um ao lado do outro e ocupa somente o espaço do conteúdo presente no mesmo -->
+            Inline 1 
+        </span>
+        <span class="borda3">
+            Inline 2
+        </span>
+       
+    </section> 
+    <footer>
+        <p>&copy; Helyf-Avila</p>
+    </footer>
+    
+</body>
+</html>

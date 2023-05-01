@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <mesta http-equiv="X-UA-Compatible" content="IE=edge">
+        <mseta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tamanho de textos</title>
+        <style type="text/css">
+            div{
+                font-size: 60px;
+
+            }
+           .texto{
+            /* Algumas unidades de Medidas  : 
+            px (pixels) -> Tamanho Fixo
+            % (porcentagem) -> Tamanho Relativo ao total do elemento, ou tela. 100% do tamanho padrão que navegador utiliza como referência
+            em -> Tamanho relativo ao container pai
+            */
+            /* font-size: 200%;   -->    Tamanho da fonte */
+            /*Texto padrão tem o tamanho fixo de 16px*/
+            font-size: 1em; /*Equivale ao tamanho padrão do container pai. Unidade relativa ao container pai, ou elemento que está dentro. Equivale exatamente ao que está em container pai*/
+            /*Sempre que definirmos alguma especificação no elemento especifico ele vai ser aplicado, mesmo que definido alguma outra no elemento pai. Preferência sempre do filho. */
+            /*em é proporcional ao tamanho do elemento pai */
+
+           } 
+           .texto2{
+            font-size: 2em; /*Duas vezes o tamanho da especificação do elemento pai*/ /*Pode ser definido com ponto ou seja, 0.5 em que seria meio que "proporcinal" ao valor do pai*/
+           }
+
+        </style>
+    </head>
+    <body>
+      <div>
+        <p class="texto">Conteúdo 1</p>
+        <p class="texto2">Conteúdo 2</p>  
+      </div>
+      
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <mesta http-equiv="X-UA-Compatible" content="IE=edge">
+        <mseta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bordas</title>
+        <style type="text/css">
+            #conteudo{ 
+                /* border: 3px solid blue; Borda sólida e vermelha. Forma de colocar tudo de uma única vez */
+                /*Borda comum*/
+                /*Define os 3 atributos de uma borda de uma única vez. O tamanho, o tipo e a cor*/
+                border-color: red green yellow blue;
+                border-width: 15px 10px 8px 3px; /*Espeçura da borda*/
+                border-style: solid dotted; /*estilo da borda*/
+                /*Podemos colocar um atributo para cada borda alias, começando sempre da borda superior do meio e seguindo para a borda da direita e assim em diante*/
+                /*Quando definidos dois valores apenas, primeiro aplicaremos o 1° em cima e em baixo e os outros dos lados.*/
+
+            }
+        </style>
+    </head>
+    <body> <!--Ocupa o espaço do conteúdo-->
+        <div id="conteudo">  <!--Coloca a borda somente no conteúdo da div-->
+            Bordas <br>
+            Bordas <br>
+            Bordas <br>
+        </div>
+        <p>
+            conteudo
+        </p>
+          
+    </body>
+</html>
