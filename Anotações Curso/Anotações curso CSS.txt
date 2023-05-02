@@ -129,5 +129,7 @@ Posicionamento absoluto e fixo:
 /*O elemento de uma posição absoluta sai do fluxo normal, mas não afeta a posição dos outros elementos. Eles se comportam como se o elemento que foi aplicado a classe não estivesse ali. Ele aparece sobre. Então podemos aplicar propriedades de deslocamento. Dentre eles o top, rigth, left e bottom */
 
 
+Quando definido o elemento absoluto a disposição será de acordo com a definição do container que tem uma posição pré definida, ou caso não tenha, ele será baseado a posição de acordo com o nosso body. Um elemento absoluto sempre será baseado na disposição do container que ele está dentro, que tenha uma disposição diferente de static.
+
 
 

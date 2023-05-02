@@ -15,6 +15,7 @@
             margin: 10px auto ;
             /*Um truque para centralizar elemento a esquerda e direita é definir a margem que representa os mesmos como auto. Acaba meio que sendo um conceito de site responsivos.  */
             padding: 10px;
+            position: relative; /*Pré defimos essa posição para alterar o elemento absolute que se baseia na posição definida no container principal, pois se não for definido ele será baseado no body*/
         }
         h1{
             /*position: static; /*Posicionamento estático é o tipo de posicionamento que é padrão no tipo de elemento, utilizando essa formatação nada muda. */
@@ -26,11 +27,21 @@
             /*position: static;*/
             
         }
+        .fixed{ /**/
+            border: 1px solid red;
+            background: #f2f2f2;
+            position: fixed;
+            
+        }
         .absolute{ /*O elemento de uma posição absoluta sai do fluxo normal, mas não afeta a posição dos outros elementos. Eles se comportam como se o elemento que foi aplicado a classe não estivesse ali. Ele aparece sobre. Então podemos aplicar propriedades de deslocamento. Dentre eles o top, rigth, left e bottom */
             border: 1px solid red;
             background: #f2f2f2;
             position: absolute;
-            top: 0px;
+            top: 80px;
+            right: 80px;
+            
+
+            /*Posição absoluta é calculada em relação ao container que está o elemento. Alinhamento baseado no container*/
 
         }
         .relative{
@@ -57,16 +68,47 @@
             <h1>A sútil arte de ligar o f@d#-se! </h1>
             
             <p>
-                P1 O problema é o seguinte: a sociedade atual, através das maravilhas da cultura do consumo e do exibicionismo de vidas incríveis nas redes sociais, produziu uma geração inteira que enxerga esses sentimentos negativos (ansiedade, medo, culpa etc.) como problemas. Veja bem, quando você abre o Facebook, vê todo mundo chafurdando em felicidade até não poder mais. Caramba, oito pessoas se casaram essa semana! E uma garota de dezesseis anos ganhou uma Ferrari de aniversário num programa de TV. E um moleque acabou de faturar dois bilhões de dólares por ter inventado um aplicativo que resolve imediatamente o problema quando o papel higiênico acaba.
+                P1 Caramba, oito pessoas se casaram essa semana! E uma garota de dezesseis anos ganhou uma Ferrari de aniversário num programa de TV. E um moleque acabou de faturar dois bilhões de dólares por ter inventado um aplicativo que resolve imediatamente o problema quando o papel higiênico acaba.
             </p>
 
-            <p class="absolute">
+            <p class="fixed">
                 P2 Essa última parte é a fonte do problema. Ficamos mal por estarmos mal; nos culpamos por nos culparmos. Ficamos irritados com nossa irritação; ansiosos com nossa ansiedade. Qual é o meu problema?
             </p>
             
             <p>
                 P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
             </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+            <p>
+                P3 Daí a importância de ligar o foda-se. É isso que vai nos salvar, nos fazendo aceitar que o mundo é uma doideira e que tudo bem, porque sempre foi assim e sempre será.
+            </p>
+
         </div>
     </section> 
     <footer>
