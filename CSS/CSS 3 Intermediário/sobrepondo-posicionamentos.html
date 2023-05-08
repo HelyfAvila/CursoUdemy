@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <style type="text/css">
+        /*Como sobrepor elementos, quando utilizamos posicionamentos variados os elementos podem se sobrepor */
+        #container{
+            position: relative;
+        }
+        .conteudo1{
+            border: 1px solid red;
+            background: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1;/*Define qual elemento aparece primeiro*/
+        }
+        .conteudo2{
+            border: 1px solid red;
+            background: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 0; /*Quanto maior o número definido maior a prioridade para exibição. */
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <section>
+    <div id="container">
+        <div class="conteudo1">
+            Conteudo 1
+        </div>
+        <div class="conteudo2">
+            Conteudo 2
+        </div>
+    </div>    
+    </section>
+    <footer>
+        <p>&copy; Helyf-Avila</p>
+    </footer>
+    
+</body>
+</html>

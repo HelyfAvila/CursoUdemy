@@ -116,20 +116,26 @@ No inline-block os elementos ficam ao lado do outro enquanto caibam na mesma lin
 
 ----------------------------------------------------------------------------------------
 
-Posicionamento estático (que é do jeito padrão, deacordo com o tipo de elemento) e relativo:
+Posicionamento estático- Static (que é do jeito padrão, deacordo com o tipo de elemento) e relativo:
 
 
 position: static; /*É a padrão, de acordo com o tipo de elemento, incluindo block e inline*/
 position: relative; /*Quando utilizamos a posição relativa precisamos aplicar propriedades de deslocamneto. As propriedades tem 4 valores: top, rigth, left e bottom */
-A posição é alterada de acordo com a posição que o mesmo deveria ter caso não aplicasse essas formatações.
+A posição é alterada de acordo com a posição que o mesmo deveria ter caso não aplicasse essas formatações. Posicionamento relativo é baseado em posição inicial do elemento 
 
 
 
 Posicionamento absoluto e fixo: 
-/*O elemento de uma posição absoluta sai do fluxo normal, mas não afeta a posição dos outros elementos. Eles se comportam como se o elemento que foi aplicado a classe não estivesse ali. Ele aparece sobre. Então podemos aplicar propriedades de deslocamento. Dentre eles o top, rigth, left e bottom */
+/*O elemento de uma posição absoluta sai do fluxo normal, mas não afeta a posição dos outros elementos. Eles se comportam como se o elemento que foi aplicado a classe não estivesse ali. Ele aparece sobre. Então podemos aplicar propriedades de deslocamento. Dentre eles o top, rigth, left e bottom */. Quando definido o elemento absoluto a disposição será de acordo com a definição do container que tem uma posição pré definida, ou caso não tenha, ele será baseado a posição de acordo com o nosso body. Um elemento absoluto sempre será baseado na disposição do container que ele está dentro, que tenha uma disposição diferente de static.Consegue alinhar o elemento com base no container que já tem uma posicição definida. 
 
+Fixo é alinhado na tela, na janela do navegador, conhecido também como viewport.
 
-Quando definido o elemento absoluto a disposição será de acordo com a definição do container que tem uma posição pré definida, ou caso não tenha, ele será baseado a posição de acordo com o nosso body. Um elemento absoluto sempre será baseado na disposição do container que ele está dentro, que tenha uma disposição diferente de static.
+--------------------------------------------------------------------------------------------------
+
+Sobrepondo elementos: Propriedade para definir qual elemento aparece primeiro. 
+
+z-index: Define qual elemento aparece 1º
+
 
 
 

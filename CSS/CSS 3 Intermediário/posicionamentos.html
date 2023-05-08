@@ -27,11 +27,14 @@
             /*position: static;*/
             
         }
-        .fixed{ /**/
+        .fixed{ /*Também sai do fluxo de posicionamento normal. Com propriedade de deslocamento. Quando utilizamos esse tipo de deslocamento o mesmo fica fixo em relação a janela do navegador  */
             border: 1px solid red;
             background: #f2f2f2;
             position: fixed;
-            
+            bottom: 0px;
+            right: 0px;
+            /*mesmo com essa definição ele continuar com uma margem superior, isso é padrão do parágrafo, nesse caso, devemos alterar diretamente no arquivo que representa o mesmo*/
+            margin: 0px; /*Utilizamos para remover a margem padrão do parágrafo*//*Podemos utilizar esse posicionamento fixo para chats por exemplo*/
         }
         .absolute{ /*O elemento de uma posição absoluta sai do fluxo normal, mas não afeta a posição dos outros elementos. Eles se comportam como se o elemento que foi aplicado a classe não estivesse ali. Ele aparece sobre. Então podemos aplicar propriedades de deslocamento. Dentre eles o top, rigth, left e bottom */
             border: 1px solid red;
@@ -56,6 +59,7 @@
             /*Quando utilizamos um valor negativo ele faz o contrário.Deslocamento inverso
             right: 20px;*/
             bottom: 20px;
+            
         }
     </style>
 </head>
