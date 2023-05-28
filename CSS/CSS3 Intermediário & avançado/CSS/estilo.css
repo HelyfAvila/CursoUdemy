@@ -1,0 +1,51 @@
+/*Seletor universal, que seleciona todos os elementos da página*/
+ *{
+    border: 1px solid red;
+    font-size: red;
+} 
+/*Seletor de texto que seleciona os elementos pelo tipo*/
+h1{
+    color: green;
+}
+/*Seletor de classe: que seleciona o elemento de acordo com sua classe */
+.roxo{
+    color: blueviolet;
+}
+
+p.roxo{ /*Aplica a mudança em elementos parágrafo que tenha a classe .roxo incluída*/
+    color: purple;
+}
+
+/*Para seletores id utilizamos o # e após isso o nome definido no elemento */
+#cabecalho{
+    border: 1px solid blue;
+}
+
+/*Seletor de filho. Ex: Elemento que é filho direto de outro.  li> a {
+    um a (link) que é filho direto de li (lista). Apenas nos links que são filhos de li. Facilita formatação de filhos
+}*/
+li>a{ /*Links filhos de li*/
+    border: 1px solid yellow;
+    background:pink;
+    color: red;
+    text-decoration: none; /*Tira _ do link*/
+    /*Nesse caso citado o elemento precisa estar diretamente no outro elemento*/
+    
+}
+
+
+/*Elementos descendentes de outros. Ex: p a {} Seleciona quaisquer elementos <a> que residem dentro de um elemento <p>, mesmo e houver outros elementos aaninhados entre eles*/
+header h1{
+    background: pink;
+}
+
+/*Seletor de irmão adjacente. Ex: h1+p{} Seleciona o primeiro elemento p após h1. Só funciona se ele estiver próximo de fato. Exemplo: tem um h1 e após isso um p, ele irá formatar esse p. Tem que ser diretamente precedente */
+/*h1+p{
+    background: yellow;
+}*/
+
+
+/*Seletor de irmão geral. Seleciona o elemento que é irmão de outro, mas não precisa ser o precedente. Tem que ser irmão, não pode por exemplo estar dentro de uma outra div*/
+h1~p{
+    color: pink;
+}

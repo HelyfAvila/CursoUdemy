@@ -1,0 +1,46 @@
+Seletores mais avançados :
+
+Seletor universal : Aplica-se em todos os elementos no documento. 
+Ex: *{} Seleciona todos os elementos da página.
+
+-----------------------
+
+Seletor de texto: Seleciona elementos pelo tipo.
+Ex: H1,H2,H3 {}. Seleciona os elementos <h1>,<h2> e <h3>
+-----------------------
+Seletor de classe: Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto. 
+Ex: .verde{} Seleciona qualquer elemento cujo atributo class tem o valor "verde"
+
+p.verde{} Seleciona o <p> cujo atributo class tem o valor "verde"
+
+-----------------------
+Seletor por id: Seleciona um elemento cujo atributo id tem o valor especificado após o símbolo de cerquilha ou jogo da velha. 
+
+Ex: #cabecalho{} Seleciona o elemento cujo atributo id tem o valor "cabecalho"
+
+-----------------------
+Seletor de filho: Seleciona um elemento que é filho direto de outro.
+
+Ex: li>a{} Seleciona quaisquer elementos <a> que são filhos de <li> (mas não outros elementos página).
+Somente para elementos que são filhos diretos. 
+-----------------------
+Seletor de descendente: Seleciona um elemento que é descendente de outro elemento especificado (e não apenas filho direto desse elemento)
+
+Ex: p a {} Seleciona quaisquer elemento <a> que residem dentro de um elemento <p>, mesmo e houver outros elementos aninhados entre eles. 
+
+-----------------------
+Seletor de irmão adjacente: Seleciona um elemento que é o irmão próximo de outro. 
+Ex: h1+ p{} Seleciona o primeiro elemento <p> depois de qualquer elemento <h1> (mas não outors elementos <p>)
+
+-----------------------
+Seletor de irmão geral: Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente. 
+
+Ex: h1~p{}  Se houvesse dois elementos <p> que fossem irmãos de um elemento <h1>, essa regra se aplicaria aos dois. 
+
+
+
+
+------------------------------
+
+Herença e especificidade :
+

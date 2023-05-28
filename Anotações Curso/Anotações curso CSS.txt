@@ -137,5 +137,28 @@ Sobrepondo elementos: Propriedade para definir qual elemento aparece primeiro.
 z-index: Define qual elemento aparece 1º
 
 
+-------------------------------------------------------------------------------------------------
+Formatação de links::
+
+/*Os links são diferentes de parágrafos, h1 etc. Os mesmos tem estados. Como por exemplo: Links não Visitados, visitados, com cursos em cima do mesmo e quando selecionado. Exemplos citados a baixo:*/
+
+ a:link { /*Link não visitado ainda, estado normal do mesmo*/
+            color: purple; /*Configurando o estado padrão de um link*/
+        }
+        a:visited{ /*Links que já foram visitados, formatação de cor.*/
+            color: #c0c0c0;
+        }        
+        a:hover{ /*Links hover, ou seja, quando você passa o cursor sobre o link */
+            color: blue;
+
+        }
+        a:active{ /*Links ativos, ou seja, quando você clica nesse link */
+            color: #e4f371;
+        }
+
+
+
+Essa ordem deve ser seguida. 
+
 
 

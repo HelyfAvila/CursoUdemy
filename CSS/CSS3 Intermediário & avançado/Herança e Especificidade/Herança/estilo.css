@@ -1,0 +1,6 @@
+/*Herança*/
+body{  /*O recomendado é que aplique formatações genéricas no body*/
+    color: red;
+    border: 1px solid blue; /*BORDER NÃO É HERDADO EM OUTROS ELEMENTOS POR PADRÃO*/
+    background: grey; /*O BACKGROUND TAMBÉM NÃO É HERDADO POR PADRÃO*/
+}/*Folha de estilo em cascata*/

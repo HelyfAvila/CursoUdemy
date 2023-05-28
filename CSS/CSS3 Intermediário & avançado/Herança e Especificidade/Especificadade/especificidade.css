@@ -1,0 +1,23 @@
+/*Especificidade: com ela podemos trabalhar bem nossas regras css e saber quais serão aplicadas primeiro.  */
+p{
+    color: blue !important; /*Se utilizarmos o !important ele será sempre priorizado*/
+}
+/*No caso de dois seletores iguais o que será aplicado sempre será o último */
+p{
+    color: red;
+}
+
+/*Se um seletor for mais específico que outro a regra mais específica será aplicada (terá precedência sobre regras mais gerais)*/
+* {
+    color: red;
+} /*Seleciona todos os elementos*/
+h2{
+    color: pink; /*QUando tivermos um seletor mais especifico essa regra será aplicada. */
+}
+h2.verde{
+    color: greenyellow;
+}
+
+h2#amarelo{
+    color: yellow;
+}

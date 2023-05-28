@@ -16,7 +16,7 @@
             width: 200px;
             height: 200px;
             position: absolute;
-            z-index: 1;/*Define qual elemento aparece primeiro*/
+            z-index: 2;/*Define qual elemento aparece primeiro*/
         }
         .conteudo2{
             border: 1px solid red;
@@ -26,8 +26,18 @@
             position: absolute;
             top: 80px;
             left: 80px;
-            z-index: 0; /*Quanto maior o número definido maior a prioridade para exibição. */
+            z-index: 1; /*Quanto maior o número definido maior a prioridade para exibição. Mais a frente o elemento aparece. */
 
+        }
+        .conteudo3{
+            border: 1px solid red;
+            background: yellow;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            z-index: 0; /*Se o z-index for o mesmo ele segue a ordem do documento.  */
         }
 
     </style>
@@ -39,10 +49,13 @@
     <section>
     <div id="container">
         <div class="conteudo1">
-            Conteudo 1
+            Conteúdo 1
         </div>
         <div class="conteudo2">
-            Conteudo 2
+            Conteúdo 2
+        </div>
+        <div class="conteudo3">
+            Conteúdo 3
         </div>
     </div>    
     </section>

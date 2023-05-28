@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Links</title>
+    <style type="text/css">
+        a{
+           padding: 5px 10px; /*Espaçamento interno. 5px em cima e em baixo e 10px dos lados.*/
+           text-decoration: none; /*Para tirar o underline de baixo dos links */
+        }      
+        /*A formatação de links é diferentes de parágrafos, h1 etc. Os mesmos tem estados. Como por exemplo: Links não Visitados. Quando o usuário ainda não clicou, pode se defenir uma cor para ele */
+        a:link { /*Link não visitado ainda, estado normal do mesmo*/
+            color: purple; /*Configurando o estado padrão de um link*/
+        }
+        a:visited{ /*Links que já foram visitados, formatação de cor.*/
+            color: purple;
+        }        
+        a:hover{ /*Links hover, ou seja, quando você passa o cursor sobre o link */
+            color: #FFF;
+            background: blue;
+
+        }
+        a:active{ /*Links ativos, ou seja, quando você clica nesse link */
+            color: #e4f371;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formatando Links</h1>
+    </header>
+    <section>
+        <div>
+            
+        </div>
+        <div>
+            <a href="https://www.google.com.br">Google</a> |
+            <a href="https://www.tecmundo.com.br">Tec Mundo</a> |
+            <a href="https://www.megacurioso.com.br">Mega Curioso</a> |
+            <a href="https://www.yhdmlo.com.br">yhdmlo</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Helyf Avila</p>
+    </footer>
+   
+</body>
+</html>

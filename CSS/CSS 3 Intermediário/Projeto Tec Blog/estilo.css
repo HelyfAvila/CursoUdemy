@@ -1,0 +1,120 @@
+/*Limpeza de formatação padrão: */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1em; /*Equivale a 16px*/
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+/*Layout*/
+#area-cabecalho{
+    background: #f7b600;
+    padding: 15px;
+    text-align: center;
+    
+}
+#area-logo, #area-menu{
+    padding: 10px;
+    
+}
+#area-principal{
+    margin: 0 auto; /*0 para margem superior e automático para as laterais */
+    width: 920px; /*Largura padrão para dispositivos modernos. Para que funcionei mt bem numa largura de 1024*/
+    padding: 15px;
+    
+}
+
+#area-postagens{
+    width: 660px;
+    margin-top: 10px;  
+    float: left;
+}
+#area-lateral{
+    width: 240px;
+    float: right; /*Os elementos são colocados a esquerda porém como são mais de um elemento os mesmos vão ficar lado a lado. */
+    margin-top: 10px;
+    
+    
+}
+#area-lateral2{
+    width: 240px ;
+    float: right;
+}
+.postagem{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+.conteudo-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px ;/*Espaçamento entre uma caixa e outra*/
+
+}
+.postagem-lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    /* border-bottom: 1px dotted #CCC; Essa é outra forma de fazer a linha pontilhada */
+}
+
+#area-rodape{
+    text-align: center;
+    padding: 15px;
+    background: #CCC;
+    margin-bottom: -40px;
+   
+}
+/*Limpar fluxo de elementos flutuantes*/
+.clear{
+    clear: both;
+}
+
+/*Formtatação do menu- Links*/
+a{
+    text-decoration: none;
+    padding: 1em ;
+}
+a:link, a:visited{ /*Formatação padrão para todos os links, independente de onde eles estejam. */
+    color: #f7b600;
+}
+a:hover{ /*Formatação padrão para todos os links, independente de onde eles estejam. */
+    text-decoration: underline; /*SEMPRE que utilizamos uma regra de css geral e em seguida utilizasse uma mais especifica que restringe somente a área de cobertura, ele herda também a regra geral */
+}
+#area-cabecalho a:link, #area-cabecalho a:visited{ /*Significa que vamos formatar esse links desse estado que estiverem dentro da área de cabeçalho. Isso são seletores, podemos combinar os ids com estados de links, com classes.  */
+    color: #FFF;
+    padding: 8px 12px; /*8px superior e inferior e 12px dos lados */
+}
+
+#area-cabecalho a:hover{
+    color: #f7b600;
+    background: white;
+    text-decoration: none; /*Aqui estou redefinindo pois na propriedade acima foi definido que teria underline nos links quando acionado o houver, ou seja, com o mouse em cima e por isso essa caracteristica passaria para esse hover também, por isso estou redefinindo. Isso se chama conceito de cascata*/
+}
+
+/*Formatações gerais */
+h1{
+    color: #4e4e4e;
+    font-size: 2.5em; /*Tamanho*/
+}
+h2{
+    color: #f7b600;
+}
+h3{
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+.branco{
+    color: white;
+}
+.data-postagem{
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /*border: 1px solid red; /*Sempre a ultima propriedade será que a que vai ser aplicada.*/
+    display: block; /*O tipo da propriedade span é inline, ou seja, o tamanho do elemento é o seu tamanho, por isso vamos alterar para block que ocupa a linha toda*/
+}
+
